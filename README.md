@@ -26,10 +26,9 @@ Then visit `http://localhost:8080/` _- or a new browser windows popped-up alread
 ## Screenshots
 
 <p align="center">
-  <img src="https://github.com/ronashdkl/atmApp-js/blob/master/screenshot/main.PNG?raw=true" width="350" title="Main Screen">
-  <img src="https://github.com/ronashdkl/atmApp-js/blob/master/screenshot/fastcash.PNG?raw=true" width="350" alt="accessibility text">
-  <img src="https://github.com/ronashdkl/atmApp-js/blob/master/screenshot/fastcash.PNG?raw=true" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/ronashdkl/atmApp.js/master/screenshot/main.PNG" title="Main Screen">
+  <img src="https://raw.githubusercontent.com/ronashdkl/atmApp.js/master/screenshot/fastcash.PNG" alt="fastcash">
+  <img src="https://raw.githubusercontent.com/ronashdkl/atmApp.js/master/screenshot/withdraw.PNG" alt="withdraw"> 
+<img src="https://raw.githubusercontent.com/ronashdkl/atmApp.js/master/screenshot/balance.PNG" alt="balance">
 </p>
-
-
 
