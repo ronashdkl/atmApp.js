@@ -1,0 +1,46 @@
+@import "./variable";
+
+@mixin active {
+    background-color: $secondaryColor;
+        box-shadow: -4px 9px 11px 3px #000;
+        color: #fff;
+}
+
+@mixin core {
+  position: absolute;
+  padding: 10px;
+  .btn-group {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 50vh;
+    button {
+      width: -webkit-fill-available;
+      margin: 25px auto;
+      padding: 10px 15px;
+      background-color: khaki;
+      border: 0px;
+      color: #000;
+      border-radius: 20px;
+      flex: 1;
+      cursor: pointer;
+      &:hover{
+        @include active()
+      }
+      &:focus{
+          outline: none;
+      }
+    }
+    button.active{
+        @include active()
+    }
+  }
+}
+
+.left-action {
+  @include core();
+  left: 0;
+}
+.right-action {
+  @include core();
+  right: 0;
+}

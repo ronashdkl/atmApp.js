@@ -1,0 +1,40 @@
+@import "variable";
+
+  .keyboard {
+    display: grid;
+    grid-template-columns: 150px 150px 150px ;
+    
+    div{
+        background-color: rgba(243, 140, 6, 0.8);
+        color: #fff;
+        border: 1px solid rgba(240, 240, 240, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            background-color:$secondaryColor;
+            transform: scale(1.1);
+            color:#000
+        }
+    }
+
+    [data-type="all"] {
+        background-color: red;
+      }
+
+      [data-type="single"] {
+        background-color:#7b7b7b;
+      }
+
+      .enter{
+          background-color: green;
+      }
+
+    @media (max-width: 400px) {
+        .keyboard {
+            grid-template-columns: auto ;
+        }
+      }
+  }
+  

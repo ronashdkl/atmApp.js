@@ -1,0 +1,41 @@
+@import "./scss/grid";
+@import "./scss/screen";
+@import "./scss/actionMenu";
+@import "./scss/keypad";
+@import "./scss/modal";
+html { 
+  background: url(assets/bg.jpg) no-repeat top fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#screen-content {
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+
+  .welcome {
+    background: #aa9ec8;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -2px 3px 6px #000;
+    cursor: default;
+  }
+ }
+
+ .main-screen{
+   padding: 10px;
+ }
+
+ .header-text{
+  text-align: right;
+  margin-top: 46px;
+  margin-bottom: 33px;
+  color: #98608d;
+  font-size: 20px;
+ }
+

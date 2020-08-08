@@ -1,0 +1,36 @@
+.atm{
+    box-shadow: 0 0 20px 0px #221e1b;
+    .screen{
+        border: 1px solid rgba(243, 140, 6, 0.8);
+    text-align: center;
+    padding: 20px;
+    cursor: default;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333232;
+    background: #f0e68ca6;
+    height: 26px;
+    }
+}
+
+#fastCashScreen{
+    background: khaki;
+    padding: 50px;
+    box-shadow: -5px 14px 20px 0px #0009;
+    border-radius: 20px;
+}
+
+@mixin confirmButton($color) {
+    border: 0;
+    background: $color;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+[data-confirm="1"] {
+   @include confirmButton(green)
+}
+[data-confirm="0"] {
+    @include confirmButton(red)
+}

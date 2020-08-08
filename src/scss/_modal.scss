@@ -1,0 +1,57 @@
+@mixin backgroundColor($color) {
+    background-color:$color
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(6, 188, 243, 0.62);
+    padding-top: 100px;
+
+     /* Modal Content */
+  .modal-content {
+    color: #fff;
+    box-shadow: inset 2px 2px 20px 0px rgba(44, 55, 60, 0.76);
+    background-color: #908a54;
+    margin: 0 auto;
+    padding: 20px;
+    border: 0px;
+    width: fit-content;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+ /* The Close Button */
+ .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+     
+  &:hover,
+  &:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  }
+ 
+  .error {
+    @include backgroundColor(#905454)
+}
+  .success {
+    @include backgroundColor(#559054);
+}
+  
+  }
+  
+  
+ 
